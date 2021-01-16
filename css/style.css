@@ -5,6 +5,8 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /******************************************
@@ -15,11 +17,88 @@ img{
   margin: 0 auto;
 }
 
+html {
+  font-size: 62.5%;
+  font-family: garamond;
+  src: url('garamond.ttf');
+}
+
+.section{
+  padding: 5rem;
+  background: linear-gradient(#e66465, #9198e5);
+  min-height: 100vh;
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 0;
+  }
+
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: #9198e5;
+
+  border-radius: 15px;
+  max-width: 60rem;
+}
+
+
+.headerTitle{
+  font-size: 3rem;
+}
+
+.headerParagraph{
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 0 auto;
+}
+
+#month, #day{
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.button{
+  width: 20%;
+  height: auto;
+  font-size: 1rem;
+  margin: 1rem;
+  border-radius: .5rem;
+}
+
+.horoscope{
+  padding: 2rem
+
+}
+
+#signHere{
+  font-size: 3rem
+}
+/*
+#textHere{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  width: 60%;
+  height: 2rem;
+} */
+
+p{
+  font-size: 2rem;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-html {
-  font-size: 62.5%
-}

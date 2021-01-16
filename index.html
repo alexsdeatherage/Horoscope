@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
       <meta charset="utf-8">
-      <meta name="description" content="This is where your description goes">
+      <meta name="Sign Generator" content="Takes input as the date, and outputs your zodiac sign, and a description of that sign.">
       <meta name="keywords" content="one, two, three">
     <title>Horoscope Project</title>
 
@@ -14,15 +14,16 @@
       <div class="container">
         <div class="header">
           <h1 class="headerTitle">Horoscope Application</h1>
-          <p class="headerParagraph">Please enter your birthday as month and day.</p>
+          <p class="headerParagraph">Please enter your birthday as month and day. A valid example would be October 23.</p>
         </div>
         <div class="input">
-          <input type="" name="month" value="">
-          <input type="" name="day" value="">
-          <button type="" name="">See your Horoscope!</button>
+          <input type="text" name="month" id="month" placeholder="Enter month here.">
+          <input type="number" name="day" id="day" placeholder="Enter day here.">
+          <button type='button' id="click">See your Horoscope!</button>
         </div>
         <div class="horoscope">
-          <p id="horoscope"></p>
+          <h2 id="signHere"></h2>
+          <p id="textHere"></p>
         </div>
       </div>
     </div>
